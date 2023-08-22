@@ -1,7 +1,7 @@
 import os
 import csv
 
-struct Coffee {
+struct Cacao {
 	id                int
 	company           string
 	bean_origin       string
@@ -16,6 +16,6 @@ struct Coffee {
 
 fn main() {
 	csv_data := os.read_file('flavors_of_cacao.csv') or { panic(err) }
-	output := csv.generate_struct[Coffee](csv_data)
+	output := csv.generate_struct[Cacao](csv_data)
 	println(output)
 }
