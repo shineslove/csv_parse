@@ -45,7 +45,6 @@ pub fn generate_struct[T](csv_data string) []T {
 			}
 		}
 		output << structed_data
-		break
 	}
 	return output
 }
